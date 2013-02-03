@@ -1,6 +1,8 @@
 ## Callable
 
-Helps fix callback issue discussed here: https://github.com/joyent/node/issues/4702
+Helps fix callback issue discussed here: https://github.com/joyent/node/issues/4702. Tests, further examples, and description about the issue this utility solves are coming.
+
+## Installation
 
 `npm install callable`
 
