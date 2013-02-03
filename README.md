@@ -15,7 +15,7 @@ var d = domain.create();
 d.run(function() {
   var request = http.request({ hostname: "google.com", port: 80, method: "HEAD" }, function(response) {
     throw new Error("An exception from the response handler");
-  }.callback().bind(this));
+  }.callable().bind(this));
   request.end();
   
   d.on("error", function(error) {
