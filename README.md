@@ -11,6 +11,8 @@ Helps fix callback issue discussed here: https://github.com/joyent/node/issues/4
 Append .callable to your function `function(){}.callable()` or wrap it: `callable(function(){})`
 
 ```javascript
+require("callable");
+
 var d = domain.create();
 d.run(function() {
   var request = http.request({ hostname: "google.com", port: 80, method: "HEAD" }, function(response) {
@@ -31,4 +33,5 @@ It's also chainable!
 function(){}.callable().bind(this);
 function(){}.bind(this).callable();
 callback(function(){}).bind(this);
+callback(function(){}.bind(this));
 ```
