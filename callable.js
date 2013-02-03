@@ -1,7 +1,12 @@
-var domain = require("domain");
+var domain = resolve("domain");
+
+function resolve(module) {
+  try { return require(module) }
+  catch(error) { return {} }
+}
 
 var callable = module.exports = function(fn) {
-  var callback = fn || this;
+  var callback = (typeof fn === "function") ? fn : this;
   
   return function() {
     try {
