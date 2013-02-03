@@ -1,6 +1,7 @@
 ## Callable
 
-Helps fix callback issue discussed here: https://github.com/joyent/node/issues/4702. Tests, further examples, and description about the issue this utility solves are coming.
+Helps fix callback issue discussed here: https://github.com/joyent/node/issues/4702.
+Tests, further examples, and description about the issue this utility solves are coming.
 
 ## Installation
 
@@ -26,12 +27,13 @@ d.run(function() {
   });
 });
 ```
-
-It's also chainable!
+### Chaining
+Both approaches are able to be chained with other functions such as `.bind()`
 
 ```javascript
 function(){}.callable().bind(this);
 function(){}.bind(this).callable();
-callback(function(){}).bind(this);
-callback(function(){}.bind(this));
+
+callable(function(){}).bind(this);
+callable(function(){}.bind(this));
 ```
