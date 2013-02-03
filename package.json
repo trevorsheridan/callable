@@ -2,11 +2,12 @@
   "name": "callable",
   "version": "0.1.0",
   "description": "A callback helper for Node with domain support",
-  "author": "Trevor Sheridan <trevorjordansheridan@gmail.com>",
-  "main": "./callable.js",
+  "keywords": ["callback", "domain", "callable"],
+  "repository": "git://github.com/trevorsheridan/callable.git",
+  "author": "Trevor Sheridan <trevorjordansheridan@gmail.com> (http://trevorsheridan.com)",
+  "main": "callable",
   "devDependencies": {
     "mocha": "*"
   },
   "engines": { "node": "*" }
 }
-
