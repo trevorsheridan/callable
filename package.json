@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "A callback helper for Node with domain support",
   "author": "Trevor Sheridan <trevorjordansheridan@gmail.com>",
-  "index": "./lib/callable.js",
+  "main": "./callable.js",
   "devDependencies": {
     "mocha": "*"
   },
   "engines": { "node": "*" }
 }
+
