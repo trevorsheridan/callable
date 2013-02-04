@@ -33,7 +33,8 @@ Both approaches are able to be chained with other functions such as `.bind()`
 ```javascript
 function(){}.callable().bind(this);
 function(){}.bind(this).callable();
-
+```
+```javascript
 callable(function(){}).bind(this);
 callable(function(){}.bind(this));
 ```
