@@ -28,7 +28,7 @@ d.run(function() {
 });
 ```
 ### Chaining
-Both approaches are able to be chained with other functions such as `.bind()`
+Both approaches can be chained with other functions such as `.bind()`
 
 Append
 ```javascript
