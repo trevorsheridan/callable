@@ -9,7 +9,7 @@ Tests, further examples, and description about the issue this utility solves are
 
 ## Usage
 
-Append .callable to your function `function(){}.callable()` or wrap it: `callable(function(){})`
+Append .callable() to your function `function(){}.callable()` or wrap it: `callable(function(){})`
 
 ```javascript
 require("callable");
@@ -30,10 +30,13 @@ d.run(function() {
 ### Chaining
 Both approaches are able to be chained with other functions such as `.bind()`
 
+Append
 ```javascript
 function(){}.callable().bind(this);
 function(){}.bind(this).callable();
 ```
+
+Wrap
 ```javascript
 callable(function(){}).bind(this);
 callable(function(){}.bind(this));
