@@ -2,7 +2,7 @@
   "name": "callable",
   "version": "0.1.0",
   "description": "Node.js callback helper with proper domain error handling",
-  "keywords": ["callback", "domain", "callable"],
+  "keywords": ["callback", "domain", "exception", "error", "emit", "callable"],
   "repository": "git://github.com/trevorsheridan/callable.git",
   "author": "Trevor Sheridan <trevorjordansheridan@gmail.com> (http://trevorsheridan.com)",
   "main": "callable",
